@@ -1,0 +1,32 @@
+{
+  "name": "angular1-typescript-hello-world",
+  "version": "0.0.1",
+  "description": "A Hello World with Angular 1.x and TypeScript using Webpack",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m0t0r/angular1-typescript-hello-world.git"
+  },
+  "keywords": [
+    "ng1",
+    "app",
+    "angular1",
+    "webpack",
+    "ts",
+    "typescript"
+  ],
+  "author": "Vitaly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m0t0r/angular1-typescript-hello-world/issues"
+  },
+  "homepage": "https://github.com/m0t0r/angular1-typescript-hello-world#readme",
+  "devDependencies": {
+    "angular": "1.4.8",
+    "ts-loader": "0.7.2",
+    "webpack": "1.12.10"
+  }
+}
