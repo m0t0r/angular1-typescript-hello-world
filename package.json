@@ -5,8 +5,7 @@
   "main": "app.js",
   "scripts": {
     "postinstall": "node_modules/.bin/tsd install",
-    "build": "rm -rf dist && webpack",
-    "start": "node_modules/.bin/live-server"
+    "start": "rm -rf dist && webpack && node_modules/.bin/live-server"
   },
   "repository": {
     "type": "git",
