@@ -9,8 +9,12 @@
   <h2>Default name:</h2>
   <hello-world></hello-world>
 
-  <h2>Custom name</h2>
+  <h2>Custom name:</h2>
   <hello-world name="Vitaly"></hello-world>
+
+  <h2>Bindable name:</h2>
+  <input type="text" ng-model="name">
+  <hello-world name="{{ name }}"></hello-world>
 </body>
 <script src="node_modules/angular/angular.js"></script>
 <script src="dist/hello-world.js"></script>
