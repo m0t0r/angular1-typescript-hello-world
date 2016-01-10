@@ -19,9 +19,15 @@ module.exports = {
     })
   ],
   module: {
+    preLoaders: [
+      { test: /\.ts$/, loader: 'tslint' }
+    ],
     loaders: [
       { test: /\.ts?$/, loader: 'ts-loader' }
     ]
+  },
+  tslint: {
+    configuration: require('./tslint.json')
   },
   resolve: {
     extensions: ['', '.ts', '.js']

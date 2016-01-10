@@ -5,17 +5,17 @@
 interface IHelloWorldController {
     name: string;
 
-    sayHelloWorld(): void;
+    sayHello(): void;
 }
 
 class HelloWorldController implements IHelloWorldController {
-    name:string;
+    name: string;
 
     constructor() {
         this.name = 'World';
     }
 
-    sayHelloWorld() {
+    sayHello() {
        console.log('Hello ' + this.name);
     }
 }
@@ -41,7 +41,7 @@ export class HelloWorldDirective implements ng.IDirective {
     link(scope: ng.IScope, el: ng.IAugmentedJQuery, attrs: IAttributes, ctrl: HelloWorldController) {
 
         el.on('mouseover', (): void => {
-            ctrl.sayHelloWorld()
-        })
+            ctrl.sayHello();
+        });
     }
 }
